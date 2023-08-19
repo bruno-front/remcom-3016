@@ -1,0 +1,15 @@
+.menu {
+  margin-right: 100px;
+
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  a {
+    color: $color-light;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+  }
+}

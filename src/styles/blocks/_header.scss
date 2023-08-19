@@ -1,0 +1,21 @@
+.header {
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+  color: $color-light;
+}
+
+.header-phone {
+  color: $color-light;
+}
