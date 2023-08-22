@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form-field {
+  flex-basis: 100%;
+}
+
+.form-field-half {
+  flex-basis: calc(50% - 15px);
+}
+
+.form-label {}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: $font;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+  background-color: $color-light;
+  border: none;
+}
+
+.form-textarea {
+  height: 200px;
+  resize: vertical;
+}

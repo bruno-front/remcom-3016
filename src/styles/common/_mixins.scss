@@ -3,3 +3,12 @@
   margin: 0 auto;
   border: 1px solid red;
 }
+
+@mixin section-title {
+  font-family: $font-title;
+  font-size: 58px;
+  line-height: 68px;
+  text-align: center;
+  color: $color-accent;
+  font-weight: 300;
+}

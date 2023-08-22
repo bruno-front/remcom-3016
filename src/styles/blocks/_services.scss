@@ -1,0 +1,38 @@
+.services {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.services-inner {
+  @include inner;
+}
+
+.services-title {
+  @include section-title;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 70px;
+  list-style: none;
+}
+
+.services-item {
+  flex-basis: calc(50% - 15px);
+}
+
+.services-caption {
+  margin-bottom: 32px;
+  font-family: $font;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 500;
+}
+
+.services-text {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+}
