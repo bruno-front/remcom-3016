@@ -1,4 +1,5 @@
 .form {
+  margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -12,12 +13,18 @@
   flex-basis: calc(50% - 15px);
 }
 
-.form-label {}
+.form-label {
+  padding-left: 20px;
+  font-size: 20px;
+  color: $color-accent;
+  line-height: 27px;
+}
 
 .form-input,
 .form-textarea {
   width: 100%;
   padding: 20px;
+  margin-top: 5px;
   border-radius: 8px;
   font-family: $font;
   font-size: 20px;

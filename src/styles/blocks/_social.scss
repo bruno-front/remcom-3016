@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
