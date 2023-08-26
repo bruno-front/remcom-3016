@@ -1,5 +1,7 @@
 .form {
-  margin-top: 70px;
+  width: 66.66%;
+  padding: 0 15px;
+  margin: 70px auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -37,4 +39,14 @@
 .form-textarea {
   height: 200px;
   resize: vertical;
+}
+
+.form-check-text {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 27px;
+
+  a {
+    color: $color-accent;
+  }
 }

@@ -17,6 +17,7 @@
 }
 
 .promo-title {
+  margin-bottom: 70px;
   font-size: 32px;
   font-weight: 400;
   line-height: 42px;
@@ -24,6 +25,7 @@
 
   span {
     display: block;
+    margin-bottom: 20px;
     font-family: $font-title;
     font-size: 116px;
     font-weight: 300;
@@ -32,6 +34,7 @@
 }
 
 .promo-visual {
+  z-index: 2;
   position: relative;
   flex-basis: calc(50% - 15px);
 
