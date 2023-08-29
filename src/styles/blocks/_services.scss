@@ -1,6 +1,14 @@
 .services {
   padding: 100px 0;
   background-color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 70px 0 88px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 50px 0;
+  }
 }
 
 .services-inner {
@@ -18,10 +26,23 @@
   row-gap: 50px;
   margin-top: 70px;
   list-style: none;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 60px;
+    row-gap: 60px;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .services-item {
   flex-basis: calc(50% - 15px);
+
+  @media (max-width: $mobile-max) {
+    margin-top: 40px;
+  }
 }
 
 .services-icon {

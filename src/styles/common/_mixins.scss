@@ -1,7 +1,12 @@
 @mixin inner {
-  width: 1278px;
+  max-width: 1278px;
   margin: 0 auto;
   border: 1px solid red;
+
+  @media (max-width: $tablet-max) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @mixin section-title {
@@ -11,4 +16,14 @@
   text-align: center;
   color: $color-accent;
   font-weight: 300;
+
+  @media (max-width: $tablet-max) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

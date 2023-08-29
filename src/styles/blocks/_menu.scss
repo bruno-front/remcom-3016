@@ -1,9 +1,38 @@
 .menu {
   margin-right: 100px;
 
+  @media (max-width: $tablet-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    margin-right: 0;
+
+    background-color: $color-dark;
+    border-top: 1px solid $color-light;
+  }
+
   ul {
     display: flex;
     gap: 30px;
+    list-style: none;
+
+    @media (max-width: $tablet-max) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  li {
+    @media (max-width: $mobile-max) {
+      margin: 20px 0;
+    }
   }
 
   a {
