@@ -52,6 +52,10 @@
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 30px;
+  }
 }
 
 .services-caption {
@@ -60,10 +64,26 @@
   font-size: 40px;
   line-height: 47px;
   font-weight: 500;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .services-text {
   font-size: 28px;
   font-weight: 300;
   line-height: 38px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }

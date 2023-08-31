@@ -12,8 +12,23 @@
   border: none;
   background-color: $color-accent;
   cursor: pointer;
+
+  // .promo-info .btn {}
+  .promo-info & {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
 }
 
 .btn-full {
   width: 100%;
+}
+
+.btn-mobile {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: inline-block;
+  }
 }

@@ -10,6 +10,10 @@ body {
   // в размер фактически получившейся высоты шапки
   color: $color-dark;
   font-family: $font;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 50px;
+  }
 }
 
 img {
