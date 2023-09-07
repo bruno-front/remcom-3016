@@ -1,27 +1,15 @@
-console.log('script work!');
+$(document).ready(function() {
 
+  // Покрасили все .services-item в синий цвет
+  $('.services-item').css({'color': 'blue'});
 
-let age;
+});
 
-console.log(age);
+// Пример добавления слушатели по клику на бургер на чистом jS
+let burger = document.querySelector('.header-burger');
 
-age = 39;
-
-console.log(age);
-
-const Pi = 3.14;
-
-console.log(Pi);
-
-
-
-let petName = 'Kesha';
-let birdName = 'Karl';
-
-console.log(petName);
-
-let a = '4';
-let b = '3';
-
-console.log(a * b);
-console.log(petName * birdName);
+burger.addEventListener('click', function() {
+  // При нажатии на кнопку в консоль будет выводиться
+  // строка 'click'
+  console.log('click');
+});
