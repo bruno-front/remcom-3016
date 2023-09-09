@@ -1,12 +1,13 @@
-.order {
-  padding: 100px 0 90px;
+.works {
+  padding: 140px 0 130px;
   background-color: rgba($color-light, .2);
 }
 
-.order-inner {
+.works-inner {
   @include inner;
 }
 
-.order-title {
+.works-title {
   @include section-title;
+  margin-bottom: 100px;
 }
