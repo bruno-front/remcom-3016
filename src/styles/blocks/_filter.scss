@@ -1,0 +1,17 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+}
+
+.filter-link {
+  font-size: 36px;
+  line-height: 49px;
+  text-decoration: none;
+  color: $color-dark;
+
+  &.active {
+    color: $color-accent;
+  }
+}
