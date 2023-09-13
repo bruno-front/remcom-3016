@@ -1,13 +1,12 @@
-.works {
+.faq {
   padding: 140px 0 130px;
   background-color: rgba($color-light, .2);
 }
 
-.works-inner {
+.faq-inner {
   @include inner;
 }
 
-.works-title {
+.faq-title {
   @include section-title;
-  margin-bottom: 100px;
 }

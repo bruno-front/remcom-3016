@@ -35,6 +35,44 @@ $(document).ready(function () {
     $('.js-contacts-info').eq(index).addClass('visible');
   });
 
+  // FAQ - аккордеоны
+  let prevAccordionBtn;
+
+  $('.js-accoridon-btn').on('click', function () {
+    if (this == prevAccordionBtn) {
+      // $(this).find('i').что-то начальное про изменение иконок +/-
+      $(this).next().slideToggle();
+    } else {
+      $(prevAccordionBtn).next().slideUp();
+      $(this).next().slideDown();
+      prevAccordionBtn = this;
+    }
+  });
+
+  // Фильтрация в выполненных работах
+  $('.js-filter-link').on('click', function (event) {
+    event.preventDefault();
+
+    $('.js-filter-link').removeClass('active');
+    $(this).addClass('active');
+
+    let dataFilter = $(this).data('filter');
+
+    if (dataFilter == 'all') {
+      $('.js-works-item').show();
+      return;
+    }
+
+    $('.js-works-item').each(function () {
+      let dataType = $(this).data('type');
+
+      if (dataType == dataFilter) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
 
   // Это не трож!!!!
 });
