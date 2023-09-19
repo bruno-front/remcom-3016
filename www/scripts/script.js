@@ -74,5 +74,12 @@ $(document).ready(function () {
     });
   });
 
+
+  // Слик слайдер в работах
+  $('.js-gallery-slider').slick({
+    dots: true,
+    adaptiveHeight: true
+  });
+
   // Это не трож!!!!
 });

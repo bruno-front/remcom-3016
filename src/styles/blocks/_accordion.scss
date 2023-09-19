@@ -1,4 +1,21 @@
+.accordion {
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 rgba($color-accent, .2);
+}
+
 .accordion-btn {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-family: $font-title;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+
   .accordion-iсon {
     //background-image: url();
   }
@@ -12,4 +29,18 @@
 
 .accordion-info {
   display: none;
+  padding: 0 30px 30px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+
+  p,
+  ul,
+  ol {
+    & + p,
+    & + ul,
+    & + ol {
+      margin-top: 25px;
+    }
+  }
 }

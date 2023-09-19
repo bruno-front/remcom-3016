@@ -11,3 +11,19 @@
   @include section-title;
   margin-bottom: 100px;
 }
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.works-item {
+  flex-basis: calc(25% - 22.5px);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 rgba($color-accent, .2);
+}

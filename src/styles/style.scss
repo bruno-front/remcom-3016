@@ -4,6 +4,9 @@
 @import "common/_fonts";
 @import "common/_common";
 
+// plugins
+@import "plugins/slick.scss";
+
 // blocks
 @import "blocks/_header";
 @import "blocks/_menu";
@@ -20,3 +23,4 @@
 @import "blocks/_reviews";
 @import "blocks/_faq";
 @import "blocks/_accordion";
+@import "blocks/_gallery";
