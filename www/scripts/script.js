@@ -74,12 +74,55 @@ $(document).ready(function () {
     });
   });
 
-
   // Слик слайдер в работах
   $('.js-gallery-slider').slick({
     dots: true,
     adaptiveHeight: true
   });
+
+  // Ajax запрос на сервер за отзывами
+  $('.js-reviews-btn').on('click', function () {
+
+    $.ajax({
+      type: 'POST',
+      url: '../jsons/reviews.json',
+      data: {
+        quantity: 2
+      },
+      success: function (res) {
+        let reviewsHtml = createHtml(res.reviews);
+        // console.log(reviewsHtml);
+        addToPage(reviewsHtml);
+      },
+      error: function () {
+        console.log('О нет! Как же я буду жить дальше');
+      }
+    });
+
+  });
+
+  function createHtml(dataArray) {
+    let htmlString = '';
+
+    dataArray.forEach(function (dataItem) {
+      htmlString = htmlString + `<div class="reviews-item">
+      <img src="${dataItem.avaUrl}" alt="${dataItem.avaAlt}" class="reviews-ava">
+      <div class="reviews-text">
+        <strong class="reviews-name">${dataItem.name}</strong>
+        <blockquote class="reviews-quote">
+          “${dataItem.text}”
+        </blockquote>
+      </div>
+    </div>
+    `;
+    });
+
+    return htmlString;
+  }
+
+  function addToPage(string) {
+    $('.js-reviews-wrap').append(string);
+  }
 
   // Это не трож!!!!
 });
